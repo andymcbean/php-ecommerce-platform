@@ -1,0 +1,72 @@
+ul.thumb {
+    float: left;
+    list-style: none;
+    padding: 10px;
+    max-width: 75%;
+    margin: 80px;
+}
+
+ul.thumb li {
+    margin: 0;
+    padding: 5px;
+    float: left;
+    position: relative;
+    /* Set the absolute positioning base coordinate */
+    width: 110px;
+    height: 110px;
+}
+
+ul.thumb li .thumbnail-wrap {
+    width: 100px;
+    height: 100px;
+    /* Set the small thumbnail size */
+    -ms-interpolation-mode: bicubic;
+    /* IE Fix for Bicubic Scaling */
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    -webkit-box-shadow: inset -3px 0px 40px -15px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset -3px 0px 40px -15px rgba(0, 0, 0, 1);
+    box-shadow: inset -3px 0px 40px -15px rgba(0, 0, 0, 1);
+
+}
+
+ul.thumb li .thumbnail-wrap.hover {
+    -webkit-box-shadow: -2px 1px 22px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 1px 22px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 1px 22px -1px rgba(0, 0, 0, 0.75);
+}
+
+.thumnail-zoomed-wrapper {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.thumbnail-zoomed-image {
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 12%;
+}
+
+.thumbnail-zoomed-image img {
+    max-width: 100%;
+}
+
+.close-image-zoom {
+    z-index: 10;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}

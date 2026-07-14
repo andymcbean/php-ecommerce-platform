@@ -1,0 +1,5 @@
+includes/connect.php
+uploads/
+.htaccess
+includes/constants.php
+stripe/stripe_keys.php
